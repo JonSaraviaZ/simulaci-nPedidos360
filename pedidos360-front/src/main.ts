@@ -7,13 +7,13 @@ Amplify.configure({
   Auth:{
     Cognito:{
       userPoolId: 'us-east-1_jM5ENyggp',
-      userPoolClientId: 'us-east-1jm5enyggp.auth.us-east-1.amazoncognito.com',
+      userPoolClientId: '7mkg6i2hd2bni9ifanikl6hcf',
       loginWith:{
         oauth:{
           domain: 'us-east-1jm5enyggp.auth.us-east-1.amazoncognito.com',
           scopes: ['email', 'openid', 'profile', 'pedidos360-api/pedidos-api-read'],
-          redirectSignIn: ['http://localhost:4200'],
-          redirectSignOut: ['http://localhost:4200'],
+          redirectSignIn: ['http://localhost:4200/'],
+          redirectSignOut: ['http://localhost:4200/'],
           responseType: 'code'
         }
       }
